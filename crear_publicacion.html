@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel = "stylesheet"  href="styles4.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <title>Brothers of Adventure</title>
+</head>
+<body>
+  <nav class = "sidebar close">
+    <header> 
+      <div class="image-text">
+        <span class = "image">
+          <img src ="img/LOGO.png" alt="logo">
+        </span>
+
+        <div class = "text header-text">
+            <span class = "name">Brothers of</span>
+            <span class = "name">Adventure</span>
+
+        
+        </div>
+      </div>
+
+
+      <i class= 'bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+        <div class="menu">
+            <!-- <li class=" search-box"> 
+                    <i class='bx bx-search icon'></i>*/
+                    <input type = "text" placeholder="Buscar ...">
+            </li> -->
+
+
+            <ul class = "menu-links">
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-chat icon'></i>
+                        <span class = "text nav-text ">Chats</span>
+                    </a>  
+                </li>
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-user-plus icon'></i>
+                        <span class = "text nav-text ">Agregar amigo</span>
+                    </a>  
+                </li>
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-group icon'></i>
+                        <span class = "text nav-text ">Grupos</span>
+                    </a>  
+                </li>
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-map icon'></i>
+                        <span class = "text nav-text ">Ubicación</span>
+                    </a>  
+                </li>
+
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-bell icon'></i>
+                        <span class = "text nav-text ">Notificaciones</span>
+                    </a>  
+                </li>
+
+
+                <li class=" nav-link">
+                    <a href = "Verpublicaciones.html">
+                        <i class='bx bxs-plane-take-off icon'></i>
+                        <span class = "text nav-text ">Viajes</span>
+                    </a>  
+                </li>
+
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-cog icon'></i>
+                        <span class = "text nav-text ">Configuración</span>
+                    </a>  
+                </li>
+
+
+                <li class=" nav-link">
+                    <a href = "editar_perfil.html">
+                        <i class='bx bxs-user icon'></i>
+                        <span class = "text nav-text ">Mi Perfil</span>
+                    </a>  
+                </li>
+            </ul>
+        </div>
+
+        <div class=" "bottom-content">
+        <li class="">
+            <a href = "#">
+                <i class='bx bx-log-out icon' ></i>
+                <span class="text nav-text">Salir</span>
+            </a>
+        </li>
+
+        <li class="mode">
+
+            <div class = "moon-sun">
+                <i class= 'bx bx-moon icon moon'></i>
+                <i class= 'bx bx-sun icon sun'></i>
+            </div>
+
+            <span class = "mode-text text">Modo Oscuro</span>
+            
+            <div class= "toggle-switch">
+                
+                <span class="switch"></span>
+            
+            </div>
+        </li>
+
+        </div>
+    </div>
+
+  </nav>
+<section class="home">
+    
+    <header class="main-header">
+        <nav class="navbar">
+            <ul>
+              <li><a href="crear_publicacion.html" class="nav-item active" id="publishTab">Publicar</a></li>
+              <li><a href="Verpublicaciones.html" class="nav-item" id="searchTab">Buscar</a></li>
+              <li><a href="comenrar.html" class="nav-item" id="publishTab">Favoritos</a></li>
+            </ul>
+          </nav>
+      </header>
+      <section class="publish-section">
+       
+          
+       <div class="publication-info">
+
+        <div class="input-title">
+            <label for="title">Título</label>
+          <input type="text" id="title" placeholder="Escribe un título para tu publicación">
+        </div>
+        
+        <div class="input-place">
+
+          <label for="location">Lugar</label>
+          <input type="text" id="location" placeholder="Escribe el lugar al que viajaste">
+        </div>
+         
+        <div class = "input-date">
+
+          <label for="date">Fecha</label>         
+          <input type="date" id="date">
+
+        </div>
+
+        <div class = "input-description">
+          
+          <label for="description">Descripción</label>   
+          <textarea id="description" placeholder="Cuénta cómo fue tu experiencia"  maxlength="500"></textarea>
+          
+        </div>
+          
+        <div class="categories"> 
+            <p>CATEGORÍAS</p>
+          
+            <div class="category-group">
+              <p>Tipos de Viaje</p>
+              <!-- Botones para Tipos de Viaje -->
+              <button class="option-button" onclick="selectOption(this)">Aventura</button>
+              <button class="option-button" onclick="selectOption(this)">Gastronomía</button>
+              <button class="option-button" onclick="selectOption(this)">Cultural</button>
+              <button class="option-button" onclick="selectOption(this)">Ecoturismo</button>
+            </div>
+          
+            <div class="category-group">
+              <p>Estilo de Viaje</p>
+              <!-- Botones para Estilo de Viaje -->
+              <button class="option-button" onclick="selectOption(this)">Mochilero</button>
+              <button class="option-button" onclick="selectOption(this)">Familiar</button>
+              <button class="option-button" onclick="selectOption(this)">Trabajo</button>
+              <button class="option-button" onclick="selectOption(this)">Guía</button>
+            </div>
+          
+            <div class="category-group">
+              <p>Experiencias Específicas</p>
+              <!-- Botones para Experiencias Específicas -->
+              <button class="option-button" onclick="selectOption(this)">Buceo</button>
+              <button class="option-button" onclick="selectOption(this)">Crucero</button>
+              <button class="option-button" onclick="selectOption(this)">Esquí</button>
+              <button class="option-button" onclick="selectOption(this)">Escalar</button>
+            </div>
+          </div>
+          
+          <button class="btn-publish">PUBLICAR NUEVO VIAJE</button>
+          
+          
+        </div>
+
+ <!-- Sección de carga de imágenes -->
+ <div class="image-upload-container">
+  <!-- Contenedor de imagen principal -->
+  <div class="main-image-upload">
+    <input type="file" id="mainImageInput" hidden onchange="previewImage(event, 'mainImagePreview')" />
+    <label for="mainImageInput" class="main-image-label">
+      <img id="mainImagePreview" src="#" alt="Imagen principal" style="display:none;">
+    </label>
+  </div>
+  
+  <!-- Contenedores de imágenes secundarias -->
+  <div class="secondary-images-container">
+    <div class="image-upload">
+      <input type="file" id="secondaryImageInput1" hidden onchange="previewImage(event, 'secondaryImagePreview1')" />
+      <label for="secondaryImageInput1" class="secondary-image-label">
+        <img id="secondaryImagePreview1" src="#" alt="Imagen secundaria 1" style="display:none;">
+      </label>
+    </div>
+    <div class="image-upload">
+      <input type="file" id="secondaryImageInput2" hidden onchange="previewImage(event, 'secondaryImagePreview2')" />
+      <label for="secondaryImageInput2" class="secondary-image-label">
+        <img id="secondaryImagePreview2" src="#" alt="Imagen secundaria 2" style="display:none;">
+      </label>
+    </div>
+    <div class="image-upload">
+      <input type="file" id="secondaryImageInput3" hidden onchange="previewImage(event, 'secondaryImagePreview3')" />
+      <label for="secondaryImageInput3" class="secondary-image-label">
+        <img id="secondaryImagePreview3" src="#" alt="Imagen secundaria 3" style="display:none;">
+      </label>
+    </div>
+  </div>
+</div>
+        
+        
+</section>
+
+
+
+
+  
+
+</section>
+
+  <script src="editar.js"></script>
+  
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel = "stylesheet"  href="styles4.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <title>Brothers of Adventure</title>
+</head>
+<body>
+  <nav class = "sidebar close">
+    <header> 
+      <div class="image-text">
+        <span class = "image">
+          <img src ="img/LOGO.png" alt="logo">
+        </span>
+
+        <div class = "text header-text">
+            <span class = "name">Brothers of</span>
+            <span class = "name">Adventure</span>
+
+        
+        </div>
+      </div>
+
+
+      <i class= 'bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+        <div class="menu">
+            <!-- <li class=" search-box"> 
+                    <i class='bx bx-search icon'></i>*/
+                    <input type = "text" placeholder="Buscar ...">
+            </li> -->
+
+
+            <ul class = "menu-links">
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-chat icon'></i>
+                        <span class = "text nav-text ">Chats</span>
+                    </a>  
+                </li>
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-user-plus icon'></i>
+                        <span class = "text nav-text ">Agregar amigo</span>
+                    </a>  
+                </li>
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-group icon'></i>
+                        <span class = "text nav-text ">Grupos</span>
+                    </a>  
+                </li>
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-map icon'></i>
+                        <span class = "text nav-text ">Ubicación</span>
+                    </a>  
+                </li>
+
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-bell icon'></i>
+                        <span class = "text nav-text ">Notificaciones</span>
+                    </a>  
+                </li>
+
+
+                <li class=" nav-link">
+                    <a href = "Verpublicaciones.html">
+                        <i class='bx bxs-plane-take-off icon'></i>
+                        <span class = "text nav-text ">Viajes</span>
+                    </a>  
+                </li>
+
+
+                <li class=" nav-link">
+                    <a href = "#">
+                        <i class='bx bxs-cog icon'></i>
+                        <span class = "text nav-text ">Configuración</span>
+                    </a>  
+                </li>
+
+
+                <li class=" nav-link">
+                    <a href = "editar_perfil.html">
+                        <i class='bx bxs-user icon'></i>
+                        <span class = "text nav-text ">Mi Perfil</span>
+                    </a>  
+                </li>
+            </ul>
+        </div>
+
+        <div class=" "bottom-content">
+        <li class="">
+            <a href = "#">
+                <i class='bx bx-log-out icon' ></i>
+                <span class="text nav-text">Salir</span>
+            </a>
+        </li>
+
+        <li class="mode">
+
+            <div class = "moon-sun">
+                <i class= 'bx bx-moon icon moon'></i>
+                <i class= 'bx bx-sun icon sun'></i>
+            </div>
+
+            <span class = "mode-text text">Modo Oscuro</span>
+            
+            <div class= "toggle-switch">
+                
+                <span class="switch"></span>
+            
+            </div>
+        </li>
+
+        </div>
+    </div>
+
+  </nav>
+<section class="home">
+    <div class="perfil">Editar Perfil</div>
+    
+    <div class="foto">
+        <div class="foto-header">Foto de Perfil</div>
+        <div class="foto-content">
+            <div class="profile-pic-container">
+                <img id="profilePic" src="#" alt="Foto de perfil" style="display:none;">
+            </div>
+            <input type="file" id="profilePicInput" hidden />
+            <label for="profilePicInput" class="upload-btn">SUBIR FOTO</label>
+        </div>
+    </div>
+
+    <div class="info">Informacion Personal
+        <div class="info">
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Juan Sebastian Flores Castrejón" maxlength="50">
+            </div>
+            <div class="input-group">
+                <label for="ubicacion">Ubicación</label>
+                <input type="text" id="ubicacion" placeholder="Lima, Perú" maxlength="100">
+            </div>
+            <div class="input-group">
+                <label for="tipoViajero">Tipo de Viajero</label>
+                <select id="tipoViajero">
+                    <option value="familiar">Familiar</option>
+                    <option value="mochilero">Mochilero</option>
+                    <option value="negocio">Negocio/Trabajo</option>
+                    <option value="guiaTurismo">Guía de turismo</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="intereses">Intereses de Viaje</label>
+                <textarea id="intereses" placeholder="Escribe tus intereses de viaje aquí" maxlength="300"></textarea>
+            </div>
+            <button type="button" id="guardarCambios">GUARDAR CAMBIOS</button>
+        </div>
+        
+    </div>
+
+
+</section>
+
+  <script src="editar.js"></script>
+  
+</html>
