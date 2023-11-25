@@ -10,7 +10,7 @@ $(document).ready(function () {
       // Verifica si la contraseña es correcta 
       if (inputContraseña === "turistaok") {
         // Si la contraseña es correcta, redirige a la página de perfil
-        window.location.href = "perfil.html";
+        window.location.href = "crear_publicacion.html";
       } else {
         // Si la contraseña es incorrecta, muestra el modal
         $("#myModal").css("display", "block");
